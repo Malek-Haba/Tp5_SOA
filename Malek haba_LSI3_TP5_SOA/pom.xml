@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>TaherChaltout_LSI3_SOA_TP5_1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies><!--Cette balise ouvre la section des dépendances, indiquant que vous allez spécifier les dépendances du projet à l'intérieur de cette section.-->
+        <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-ri -->
+        <dependency><!-- Cette balise déclare une dépendance spécifique à un projet externe.-->
+            <groupId>com.sun.xml.ws</groupId><!-- Cette balise spécifie le groupe auquel appartient la dépendance.-->
+            <artifactId>jaxws-ri</artifactId><!--Cette balise spécifie l'identifiant de l'artefact, c'est-à-dire le nom de la bibliothèque ou du projet externe.-->
+            <version>4.0.0</version><!--Cette balise indique la version de l'artefact que vous souhaitez utiliser dans votre projet. Ici, la version spécifiée est "4.0.0".-->
+            <type>pom</type><!--Cette balise spécifie le type de l'artefact. Dans ce cas, il s'agit d'un "pom", ce qui signifie que c'est un projet Maven, et non un JAR ou un autre type de bibliothèque.-->
+        </dependency>
+    </dependencies>
+</project>
